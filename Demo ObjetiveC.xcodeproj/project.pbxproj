@@ -13,6 +13,19 @@
 		AE15F0F01CE5078F000CC4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE15F0EE1CE5078F000CC4EA /* Main.storyboard */; };
 		AE15F0F21CE5078F000CC4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE15F0F11CE5078F000CC4EA /* Assets.xcassets */; };
 		AE15F0F51CE5078F000CC4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE15F0F31CE5078F000CC4EA /* LaunchScreen.storyboard */; };
+		AE8CA7F81D58DB6100212315 /* libSeeketing-sdk-REFS-SETS_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8CA7F41D58DB6100212315 /* libSeeketing-sdk-REFS-SETS_lib.a */; };
+		AE8CA7FA1D58DBE300212315 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8CA7F91D58DBE300212315 /* SystemConfiguration.framework */; };
+		AE8CA7FC1D58DBEE00212315 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8CA7FB1D58DBEE00212315 /* CoreTelephony.framework */; };
+		AE8CA7FE1D58DBF800212315 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8CA7FD1D58DBF800212315 /* CoreLocation.framework */; };
+		AE8CA8001D58DC0600212315 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8CA7FF1D58DC0600212315 /* libsqlite3.tbd */; };
+		AE8CA8021D58DC0F00212315 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8CA8011D58DC0F00212315 /* StoreKit.framework */; };
+		AE8CA8041D58DC1900212315 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE8CA8031D58DC1900212315 /* CoreBluetooth.framework */; };
+		AE8CA8081D58DDC000212315 /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8CA8071D58DDC000212315 /* MainVC.m */; };
+		AE8CA8151D58FBC400212315 /* btn_volver.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8CA80D1D58FBC400212315 /* btn_volver.png */; };
+		AE8CA8161D58FBC400212315 /* REFSCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8CA80F1D58FBC400212315 /* REFSCell.m */; };
+		AE8CA8171D58FBC400212315 /* REFSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8CA8101D58FBC400212315 /* REFSCell.xib */; };
+		AE8CA8181D58FBC400212315 /* RefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8CA8131D58FBC400212315 /* RefsViewController.m */; };
+		AE8CA8191D58FBC400212315 /* RefsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8CA8141D58FBC400212315 /* RefsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,26 @@
 		AE15F0F11CE5078F000CC4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE15F0F41CE5078F000CC4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE15F0F61CE5078F000CC4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8CA7F41D58DB6100212315 /* libSeeketing-sdk-REFS-SETS_lib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libSeeketing-sdk-REFS-SETS_lib.a"; sourceTree = "<group>"; };
+		AE8CA7F51D58DB6100212315 /* REFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFS.h; sourceTree = "<group>"; };
+		AE8CA7F61D58DB6100212315 /* SETS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETS.h; sourceTree = "<group>"; };
+		AE8CA7F71D58DB6100212315 /* SETSEvParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SETSEvParams.h; sourceTree = "<group>"; };
+		AE8CA7F91D58DBE300212315 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE8CA7FB1D58DBEE00212315 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AE8CA7FD1D58DBF800212315 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AE8CA7FF1D58DC0600212315 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		AE8CA8011D58DC0F00212315 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AE8CA8031D58DC1900212315 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		AE8CA8061D58DCF300212315 /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		AE8CA8071D58DDC000212315 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		AE8CA80D1D58FBC400212315 /* btn_volver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_volver.png; sourceTree = "<group>"; };
+		AE8CA80E1D58FBC400212315 /* REFSCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFSCell.h; sourceTree = "<group>"; };
+		AE8CA80F1D58FBC400212315 /* REFSCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFSCell.m; sourceTree = "<group>"; };
+		AE8CA8101D58FBC400212315 /* REFSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = REFSCell.xib; sourceTree = "<group>"; };
+		AE8CA8111D58FBC400212315 /* REFSElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFSElement.h; sourceTree = "<group>"; };
+		AE8CA8121D58FBC400212315 /* RefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefsViewController.h; sourceTree = "<group>"; };
+		AE8CA8131D58FBC400212315 /* RefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefsViewController.m; sourceTree = "<group>"; };
+		AE8CA8141D58FBC400212315 /* RefsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +66,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE8CA8041D58DC1900212315 /* CoreBluetooth.framework in Frameworks */,
+				AE8CA8021D58DC0F00212315 /* StoreKit.framework in Frameworks */,
+				AE8CA8001D58DC0600212315 /* libsqlite3.tbd in Frameworks */,
+				AE8CA7FE1D58DBF800212315 /* CoreLocation.framework in Frameworks */,
+				AE8CA7FC1D58DBEE00212315 /* CoreTelephony.framework in Frameworks */,
+				AE8CA7FA1D58DBE300212315 /* SystemConfiguration.framework in Frameworks */,
+				AE8CA7F81D58DB6100212315 /* libSeeketing-sdk-REFS-SETS_lib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +82,7 @@
 		AE15F0D91CE5078F000CC4EA = {
 			isa = PBXGroup;
 			children = (
+				AE8CA8051D58DC2200212315 /* Frameworks */,
 				AE15F0E41CE5078F000CC4EA /* Demo ObjetiveC */,
 				AE15F0E31CE5078F000CC4EA /* Products */,
 			);
@@ -58,8 +99,11 @@
 		AE15F0E41CE5078F000CC4EA /* Demo ObjetiveC */ = {
 			isa = PBXGroup;
 			children = (
+				AE8CA7F31D58DB2900212315 /* Seeketing */,
 				AE15F0E81CE5078F000CC4EA /* AppDelegate.h */,
 				AE15F0E91CE5078F000CC4EA /* AppDelegate.m */,
+				AE8CA8061D58DCF300212315 /* MainVC.h */,
+				AE8CA8071D58DDC000212315 /* MainVC.m */,
 				AE15F0EB1CE5078F000CC4EA /* ViewController.h */,
 				AE15F0EC1CE5078F000CC4EA /* ViewController.m */,
 				AE15F0EE1CE5078F000CC4EA /* Main.storyboard */,
@@ -68,7 +112,8 @@
 				AE15F0F61CE5078F000CC4EA /* Info.plist */,
 				AE15F0E51CE5078F000CC4EA /* Supporting Files */,
 			);
-			path = "Demo ObjetiveC";
+			name = "Demo ObjetiveC";
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		AE15F0E51CE5078F000CC4EA /* Supporting Files */ = {
@@ -77,6 +122,46 @@
 				AE15F0E61CE5078F000CC4EA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE8CA7F31D58DB2900212315 /* Seeketing */ = {
+			isa = PBXGroup;
+			children = (
+				AE8CA80C1D58FBBA00212315 /* Notifications */,
+				AE8CA7F41D58DB6100212315 /* libSeeketing-sdk-REFS-SETS_lib.a */,
+				AE8CA7F51D58DB6100212315 /* REFS.h */,
+				AE8CA7F61D58DB6100212315 /* SETS.h */,
+				AE8CA7F71D58DB6100212315 /* SETSEvParams.h */,
+			);
+			name = Seeketing;
+			sourceTree = "<group>";
+		};
+		AE8CA8051D58DC2200212315 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE8CA8031D58DC1900212315 /* CoreBluetooth.framework */,
+				AE8CA8011D58DC0F00212315 /* StoreKit.framework */,
+				AE8CA7FF1D58DC0600212315 /* libsqlite3.tbd */,
+				AE8CA7FD1D58DBF800212315 /* CoreLocation.framework */,
+				AE8CA7FB1D58DBEE00212315 /* CoreTelephony.framework */,
+				AE8CA7F91D58DBE300212315 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE8CA80C1D58FBBA00212315 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				AE8CA80D1D58FBC400212315 /* btn_volver.png */,
+				AE8CA80E1D58FBC400212315 /* REFSCell.h */,
+				AE8CA80F1D58FBC400212315 /* REFSCell.m */,
+				AE8CA8101D58FBC400212315 /* REFSCell.xib */,
+				AE8CA8111D58FBC400212315 /* REFSElement.h */,
+				AE8CA8121D58FBC400212315 /* RefsViewController.h */,
+				AE8CA8131D58FBC400212315 /* RefsViewController.m */,
+				AE8CA8141D58FBC400212315 /* RefsViewController.xib */,
+			);
+			name = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +195,7 @@
 				TargetAttributes = {
 					AE15F0E11CE5078F000CC4EA = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = VZC56G5JWM;
 					};
 				};
 			};
@@ -138,7 +224,10 @@
 			files = (
 				AE15F0F51CE5078F000CC4EA /* LaunchScreen.storyboard in Resources */,
 				AE15F0F21CE5078F000CC4EA /* Assets.xcassets in Resources */,
+				AE8CA8151D58FBC400212315 /* btn_volver.png in Resources */,
 				AE15F0F01CE5078F000CC4EA /* Main.storyboard in Resources */,
+				AE8CA8191D58FBC400212315 /* RefsViewController.xib in Resources */,
+				AE8CA8171D58FBC400212315 /* REFSCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE15F0ED1CE5078F000CC4EA /* ViewController.m in Sources */,
+				AE8CA8081D58DDC000212315 /* MainVC.m in Sources */,
 				AE15F0EA1CE5078F000CC4EA /* AppDelegate.m in Sources */,
 				AE15F0E71CE5078F000CC4EA /* main.m in Sources */,
+				AE8CA8181D58FBC400212315 /* RefsViewController.m in Sources */,
+				AE8CA8161D58FBC400212315 /* REFSCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +357,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Demo ObjetiveC/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.celmedia.Demo-ObjetiveC";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo",
+					ObjetiveC,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.celmedia.seeketingdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -276,10 +377,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Demo ObjetiveC/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.celmedia.Demo-ObjetiveC";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Demo",
+					ObjetiveC,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.celmedia.seeketingdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -302,6 +412,7 @@
 				AE15F0FB1CE5078F000CC4EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
