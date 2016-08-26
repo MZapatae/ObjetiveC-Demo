@@ -33,12 +33,67 @@
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     [REFS applicationDidReceiveRemoteNotification:userInfo
                              withApplicationState:application];
+    
+    NSLog(@"Received Remote Notification");
+    NSLog(@"Remote notification: %@",[userInfo description]);
+    
+    NSArray *dataArray = [[NSArray alloc] initWithArray:[userInfo objectForKey:@"data"]];
+    NSDictionary *data = [[NSDictionary alloc] initWithDictionary:[dataArray objectAtIndex:0]];
+    NSDictionary *params = [[NSDictionary alloc] initWithDictionary:[userInfo objectForKey:@"params"]];
+    
+    NSString *refsId = [data objectForKey:@"id"];
+    NSString *refsNotyId = [data objectForKey:@"noty_id"];
+    NSString *refsTitle = [params objectForKey:@"ntps_title"];
+    NSString *refsMessage = [params objectForKey:@"ntps_msg"];
+
+    NSLog(@"Seeketing Received Id: %@", refsId);
+    NSLog(@"Seeketing Received Noty Id: %@", refsNotyId);
+    NSLog(@"Seeketing Received Title: %@", refsTitle);
+    NSLog(@"Seeketing Received Message: %@", refsMessage);
+
+    /*
+     
+        NSString *badge = [apsInfo objectForKey:@"badge"];
+        NSString *alert = [apsInfo objectForKey:@"alert"];
+        NSString *sound = [apsInfo objectForKey:@"sound"];
+        NSString *title = [notificationInfo objectForKey:@"titulo"];
+        NSString *body = [notificationInfo objectForKey:@"body"];
+        int pushType = [[notificationInfo objectForKey:@"tipo_push"] intValue];
+        
+        NSLog(@"Received Push Badge: %@", badge);
+        NSLog(@"Received Push Alert: %@", alert);
+        NSLog(@"Received Push Sound: %@", sound);
+        
+        NSLog(@"Received Push Title: %@", title);
+        NSLog(@"Received Push Body: %@", body);
+        NSLog(@"Received Push Push Type: %d", pushType);
+        
+        UIApplicationState state = [[UIApplication sharedApplication] applicationState];
+        if (state == UIApplicationStateBackground || state == UIApplicationStateInactive)
+        {
+            application.applicationIconBadgeNumber = [[apsInfo objectForKey:@"badge"] integerValue];
+            [[NSUserDefaults standardUserDefaults] setInteger:pushType forKey:@"pushTypeReceived"];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"pushNotification" object:nil userInfo:userInfo];
+        } else {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: title
+                                                                message: body  delegate:self
+                                                      cancelButtonTitle:@"Cerrar"
+                                                      otherButtonTitles:nil, nil];
+            alertView.tag = 10 ;
+            [alertView show];
+        }*/
+
+    
+    
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
     [REFS notificationReceivedWithId:[[notification.userInfo objectForKey:@"noty_id"] longLongValue]
                 withApplicationState:application
                      andNotification:notification];
+    
+    NSLog(@"Received Local Notification");
+
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {

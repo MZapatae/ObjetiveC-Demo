@@ -17,10 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self showRefsNotifications];
 }
 
-- (void) showRefsNotifications {
+- (IBAction) notisButton:(id)sender {
     RefsViewController *refs = [[RefsViewController alloc]init];
     [self presentViewController:refs animated:YES completion:nil];
 }

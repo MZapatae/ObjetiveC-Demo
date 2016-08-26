@@ -7,8 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "REFS.h"
-#import "SETS.h"
 #import "RefsViewController.h"
 
 @interface MainVC : UIViewController
