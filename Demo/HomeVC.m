@@ -7,6 +7,7 @@
 //
 
 #import "HomeVC.h"
+#import "RegisterVC.h"
 
 @interface HomeVC ()
 
@@ -16,6 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (IBAction)logoutAction:(id)sender {
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"isUserLoggedIn"];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"userTokenId"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    RegisterVC *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"RegisterVC"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
