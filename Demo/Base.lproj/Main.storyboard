@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gVZ-TP-eMr">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--MainVC-->
+        <!--RegisterVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterVC" title="RegisterVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="RegisterVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,20 +19,146 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYt-Iz-Txl">
-                                <rect key="frame" x="164" y="319" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sexo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9U-6w-2E4">
+                                <rect key="frame" x="39" y="318" width="296" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJD-tk-njG">
+                                <rect key="frame" x="39" y="222" width="296" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTr-iV-fek">
+                                <rect key="frame" x="39" y="270" width="296" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fiB-cZ-Jym">
+                                <rect key="frame" x="39" y="366" width="296" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha De Nacimiento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ji-sd-QUW">
+                                <rect key="frame" x="39" y="416" width="296" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_registro.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="dOx-Sp-j09">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dOx-Sp-j09" secondAttribute="height" multiplier="25:12" id="SGP-1h-qfn"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plh-yJ-hek">
+                                <rect key="frame" x="122" y="587" width="130" height="60"/>
+                                <state key="normal" image="btn_registrarse.png"/>
                                 <connections>
-                                    <action selector="notisButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B45-Kh-yUG"/>
+                                    <action selector="registerUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Pw-Mm-UUW"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="OJD-tk-njG" firstAttribute="trailing" secondItem="hTr-iV-fek" secondAttribute="trailing" id="0AM-7g-0tz"/>
+                            <constraint firstItem="fiB-cZ-Jym" firstAttribute="trailing" secondItem="4ji-sd-QUW" secondAttribute="trailing" id="0U6-pd-HIS"/>
+                            <constraint firstItem="U9U-6w-2E4" firstAttribute="top" secondItem="hTr-iV-fek" secondAttribute="bottom" constant="18" id="4CM-N3-vxw"/>
+                            <constraint firstItem="dOx-Sp-j09" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8qj-Tc-BhU"/>
+                            <constraint firstItem="dOx-Sp-j09" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9ng-HL-fll"/>
+                            <constraint firstItem="fiB-cZ-Jym" firstAttribute="leading" secondItem="4ji-sd-QUW" secondAttribute="leading" id="BJ2-xC-HTd"/>
+                            <constraint firstItem="hTr-iV-fek" firstAttribute="trailing" secondItem="U9U-6w-2E4" secondAttribute="trailing" id="Bnm-Vs-iEy"/>
+                            <constraint firstAttribute="trailing" secondItem="dOx-Sp-j09" secondAttribute="trailing" id="D6X-uU-w5B"/>
+                            <constraint firstItem="dOx-Sp-j09" firstAttribute="centerX" secondItem="Plh-yJ-hek" secondAttribute="centerX" constant="1" id="DGa-Jc-f1j"/>
+                            <constraint firstItem="OJD-tk-njG" firstAttribute="top" secondItem="dOx-Sp-j09" secondAttribute="bottom" constant="42" id="FYb-s3-ihr"/>
+                            <constraint firstItem="OJD-tk-njG" firstAttribute="leading" secondItem="hTr-iV-fek" secondAttribute="leading" id="HaT-cX-aK0"/>
+                            <constraint firstItem="hTr-iV-fek" firstAttribute="top" secondItem="OJD-tk-njG" secondAttribute="bottom" constant="18" id="JDV-7g-van"/>
+                            <constraint firstItem="hTr-iV-fek" firstAttribute="leading" secondItem="U9U-6w-2E4" secondAttribute="leading" id="L51-8z-wlg"/>
+                            <constraint firstItem="U9U-6w-2E4" firstAttribute="leading" secondItem="fiB-cZ-Jym" secondAttribute="leading" id="RiS-Ux-hQm"/>
+                            <constraint firstItem="fiB-cZ-Jym" firstAttribute="top" secondItem="U9U-6w-2E4" secondAttribute="bottom" constant="18" id="bkc-2V-byW"/>
+                            <constraint firstItem="4ji-sd-QUW" firstAttribute="top" secondItem="fiB-cZ-Jym" secondAttribute="bottom" constant="20" id="eZg-0e-R86"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Plh-yJ-hek" secondAttribute="bottom" constant="20" id="gPk-C1-hkq"/>
+                            <constraint firstItem="dOx-Sp-j09" firstAttribute="centerX" secondItem="OJD-tk-njG" secondAttribute="centerX" id="jb8-KQ-F7T"/>
+                            <constraint firstItem="U9U-6w-2E4" firstAttribute="trailing" secondItem="fiB-cZ-Jym" secondAttribute="trailing" id="sgp-15-l9P"/>
+                            <constraint firstItem="OJD-tk-njG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="zCR-ZS-uno"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="textApellido" destination="hTr-iV-fek" id="Pcl-z2-gUj"/>
+                        <outlet property="textEmail" destination="hTr-iV-fek" id="lzH-Wp-FGP"/>
+                        <outlet property="textFechaNacimiento" destination="4ji-sd-QUW" id="3cR-ah-cCh"/>
+                        <outlet property="textNombre" destination="OJD-tk-njG" id="SgJ-Si-AbL"/>
+                        <outlet property="textSexo" destination="U9U-6w-2E4" id="ANV-RP-3uP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="389.5" y="310.5"/>
+        </scene>
+        <!--SplashVC-->
+        <scene sceneID="xBa-dB-JYm">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gVZ-TP-eMr" customClass="SplashVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hkp-Q4-Do6"/>
+                        <viewControllerLayoutGuide type="bottom" id="96y-5U-DlE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lxa-xk-kDQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tIk-66-Rai">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tIk-66-Rai" firstAttribute="leading" secondItem="lxa-xk-kDQ" secondAttribute="leading" id="7Da-PD-hiD"/>
+                            <constraint firstItem="tIk-66-Rai" firstAttribute="top" secondItem="lxa-xk-kDQ" secondAttribute="top" id="KAH-7B-ijm"/>
+                            <constraint firstItem="tIk-66-Rai" firstAttribute="bottom" secondItem="96y-5U-DlE" secondAttribute="top" id="gKs-Va-iN1"/>
+                            <constraint firstAttribute="trailing" secondItem="tIk-66-Rai" secondAttribute="trailing" id="gu0-Wr-mqb"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8c-nf-Dbt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632.5" y="-459.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hlP-9p-trv">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TJW-sV-brU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bbu-fJ-fP0"/>
+                        <viewControllerLayoutGuide type="bottom" id="yVc-H5-OAa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h0x-b3-EcX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_inicio_demo2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mYx-Kq-l9u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yng-w7-JGz">
+                                <rect key="frame" x="122" y="304" width="130" height="60"/>
+                                <state key="normal" image="btn_logout.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpH-fV-BIZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874.5" y="310.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banner_registro.jpg" width="750" height="362"/>
+        <image name="bg_inicio_demo2.jpg" width="1125" height="2001"/>
+        <image name="bg_splash.jpg" width="1125" height="2001"/>
+        <image name="btn_logout.png" width="130" height="60"/>
+        <image name="btn_registrarse.png" width="130" height="60"/>
+    </resources>
 </document>

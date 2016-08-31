@@ -16,8 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.gender = [[NSMutableArray alloc] init];
+    [self.gender addObject:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"1", @"codigo" , @"Masculino" , @"nombre" , nil ]];
+    [self.gender addObject:[NSMutableDictionary dictionaryWithObjectsAndKeys:@"2", @"codigo" , @"Femenino"  , @"nombre" , nil ]];
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
 
 - (IBAction) notisButton:(id)sender {
     RefsViewController *refs = [[RefsViewController alloc]init];
@@ -26,7 +41,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
