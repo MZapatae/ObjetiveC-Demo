@@ -144,8 +144,8 @@
     UIDevice *device = [UIDevice currentDevice];
     NSUUID *identifierForVendor;
     identifierForVendor = [UIDevice currentDevice].identifierForVendor;
-    NSString *nameApp = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
-    NSString *versionApp = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    NSString *nameApp = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleNameKey];
+    NSString *versionApp = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     NSString *deviceId = [identifierForVendor UUIDString];
     NSString *nameDevice = device.name;
     NSString *modelDevice = [self platformType:self.deviceModel];
