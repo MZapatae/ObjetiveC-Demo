@@ -20,27 +20,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sexo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U9U-6w-2E4">
-                                <rect key="frame" x="39" y="318" width="296" height="30"/>
+                                <rect key="frame" x="35" y="303" width="304" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OJD-tk-njG">
-                                <rect key="frame" x="39" y="222" width="296" height="30"/>
+                                <rect key="frame" x="35" y="207" width="304" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTr-iV-fek">
-                                <rect key="frame" x="39" y="270" width="296" height="30"/>
+                                <rect key="frame" x="35" y="255" width="304" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fiB-cZ-Jym">
-                                <rect key="frame" x="39" y="366" width="296" height="30"/>
+                                <rect key="frame" x="35" y="351" width="304" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha De Nacimiento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ji-sd-QUW">
-                                <rect key="frame" x="39" y="416" width="296" height="30"/>
+                                <rect key="frame" x="35" y="401" width="304" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
@@ -51,7 +51,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plh-yJ-hek">
-                                <rect key="frame" x="122" y="587" width="130" height="60"/>
+                                <rect key="frame" x="122" y="599" width="130" height="60"/>
                                 <state key="normal" image="btn_registrarse.png"/>
                                 <connections>
                                     <action selector="registerUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Pw-Mm-UUW"/>
@@ -68,18 +68,18 @@
                             <constraint firstItem="fiB-cZ-Jym" firstAttribute="leading" secondItem="4ji-sd-QUW" secondAttribute="leading" id="BJ2-xC-HTd"/>
                             <constraint firstItem="hTr-iV-fek" firstAttribute="trailing" secondItem="U9U-6w-2E4" secondAttribute="trailing" id="Bnm-Vs-iEy"/>
                             <constraint firstAttribute="trailing" secondItem="dOx-Sp-j09" secondAttribute="trailing" id="D6X-uU-w5B"/>
-                            <constraint firstItem="dOx-Sp-j09" firstAttribute="centerX" secondItem="Plh-yJ-hek" secondAttribute="centerX" constant="1" id="DGa-Jc-f1j"/>
-                            <constraint firstItem="OJD-tk-njG" firstAttribute="top" secondItem="dOx-Sp-j09" secondAttribute="bottom" constant="42" id="FYb-s3-ihr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Plh-yJ-hek" secondAttribute="bottom" constant="8" id="Elg-OG-SJq"/>
+                            <constraint firstItem="OJD-tk-njG" firstAttribute="top" secondItem="dOx-Sp-j09" secondAttribute="bottom" constant="27" id="FYb-s3-ihr"/>
                             <constraint firstItem="OJD-tk-njG" firstAttribute="leading" secondItem="hTr-iV-fek" secondAttribute="leading" id="HaT-cX-aK0"/>
                             <constraint firstItem="hTr-iV-fek" firstAttribute="top" secondItem="OJD-tk-njG" secondAttribute="bottom" constant="18" id="JDV-7g-van"/>
                             <constraint firstItem="hTr-iV-fek" firstAttribute="leading" secondItem="U9U-6w-2E4" secondAttribute="leading" id="L51-8z-wlg"/>
                             <constraint firstItem="U9U-6w-2E4" firstAttribute="leading" secondItem="fiB-cZ-Jym" secondAttribute="leading" id="RiS-Ux-hQm"/>
                             <constraint firstItem="fiB-cZ-Jym" firstAttribute="top" secondItem="U9U-6w-2E4" secondAttribute="bottom" constant="18" id="bkc-2V-byW"/>
                             <constraint firstItem="4ji-sd-QUW" firstAttribute="top" secondItem="fiB-cZ-Jym" secondAttribute="bottom" constant="20" id="eZg-0e-R86"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Plh-yJ-hek" secondAttribute="bottom" constant="20" id="gPk-C1-hkq"/>
                             <constraint firstItem="dOx-Sp-j09" firstAttribute="centerX" secondItem="OJD-tk-njG" secondAttribute="centerX" id="jb8-KQ-F7T"/>
                             <constraint firstItem="U9U-6w-2E4" firstAttribute="trailing" secondItem="fiB-cZ-Jym" secondAttribute="trailing" id="sgp-15-l9P"/>
-                            <constraint firstItem="OJD-tk-njG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="zCR-ZS-uno"/>
+                            <constraint firstItem="Plh-yJ-hek" firstAttribute="centerX" secondItem="4ji-sd-QUW" secondAttribute="centerX" id="ybz-Et-UUb"/>
+                            <constraint firstItem="OJD-tk-njG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="19" id="zCR-ZS-uno"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -137,11 +137,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_inicio_demo2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mYx-Kq-l9u">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_inicio_demo1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mYx-Kq-l9u">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yng-w7-JGz">
-                                <rect key="frame" x="122" y="304" width="130" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yng-w7-JGz">
+                                <rect key="frame" x="123" y="255" width="130" height="60"/>
                                 <state key="normal" image="btn_logout.png"/>
                                 <connections>
                                     <action selector="logoutAction:" destination="TJW-sV-brU" eventType="touchUpInside" id="PRu-o6-Ud8"/>
@@ -150,6 +150,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mYx-Kq-l9u" firstAttribute="top" secondItem="h0x-b3-EcX" secondAttribute="top" id="0cV-TE-PHj"/>
+                            <constraint firstItem="mYx-Kq-l9u" firstAttribute="centerX" secondItem="yng-w7-JGz" secondAttribute="centerX" id="3V9-D7-cwD"/>
+                            <constraint firstItem="mYx-Kq-l9u" firstAttribute="leading" secondItem="h0x-b3-EcX" secondAttribute="leading" id="5Oe-rs-hZw"/>
+                            <constraint firstItem="mYx-Kq-l9u" firstAttribute="bottom" secondItem="yVc-H5-OAa" secondAttribute="top" id="PcD-C9-tV0"/>
+                            <constraint firstItem="mYx-Kq-l9u" firstAttribute="centerY" secondItem="yng-w7-JGz" secondAttribute="centerY" id="SWQ-Aa-Ucf"/>
+                            <constraint firstAttribute="trailing" secondItem="mYx-Kq-l9u" secondAttribute="trailing" id="TDC-Hf-FuM"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -160,7 +168,7 @@
     </scenes>
     <resources>
         <image name="banner_registro.jpg" width="750" height="362"/>
-        <image name="bg_inicio_demo2.jpg" width="1125" height="2001"/>
+        <image name="bg_inicio_demo1.jpg" width="1125" height="2001"/>
         <image name="bg_splash.jpg" width="1125" height="2001"/>
         <image name="btn_logout.png" width="130" height="60"/>
         <image name="btn_registrarse.png" width="130" height="60"/>
