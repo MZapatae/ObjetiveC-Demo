@@ -39,6 +39,8 @@
     [REFS applicationDidReceiveRemoteNotification:userInfo
                              withApplicationState:application];
     
+    
+    /*
     NSLog(@"Received Remote Notification");
     NSLog(@"Remote notification: %@",[userInfo description]);
     
@@ -55,41 +57,40 @@
     NSLog(@"Seeketing Received Noty Id: %@", refsNotyId);
     NSLog(@"Seeketing Received Title: %@", refsTitle);
     NSLog(@"Seeketing Received Message: %@", refsMessage);
-
-    /*
+     */
+    
      
-        NSString *badge = [apsInfo objectForKey:@"badge"];
-        NSString *alert = [apsInfo objectForKey:@"alert"];
-        NSString *sound = [apsInfo objectForKey:@"sound"];
-        NSString *title = [notificationInfo objectForKey:@"titulo"];
-        NSString *body = [notificationInfo objectForKey:@"body"];
-        int pushType = [[notificationInfo objectForKey:@"tipo_push"] intValue];
-        
-        NSLog(@"Received Push Badge: %@", badge);
-        NSLog(@"Received Push Alert: %@", alert);
-        NSLog(@"Received Push Sound: %@", sound);
-        
-        NSLog(@"Received Push Title: %@", title);
-        NSLog(@"Received Push Body: %@", body);
-        NSLog(@"Received Push Push Type: %d", pushType);
-        
-        UIApplicationState state = [[UIApplication sharedApplication] applicationState];
-        if (state == UIApplicationStateBackground || state == UIApplicationStateInactive)
-        {
-            application.applicationIconBadgeNumber = [[apsInfo objectForKey:@"badge"] integerValue];
-            [[NSUserDefaults standardUserDefaults] setInteger:pushType forKey:@"pushTypeReceived"];
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"pushNotification" object:nil userInfo:userInfo];
-        } else {
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: title
-                                                                message: body  delegate:self
-                                                      cancelButtonTitle:@"Cerrar"
-                                                      otherButtonTitles:nil, nil];
-            alertView.tag = 10 ;
-            [alertView show];
-        }*/
 
+    NSLog(@"Remote notification: %@",[userInfo description]);
+    NSDictionary *apsInfo = [userInfo objectForKey:@"aps"];
+    NSDictionary *notificationInfo = [userInfo objectForKey:@"alert"];
     
+    NSString *badge = [apsInfo objectForKey:@"badge"];
+    NSString *alert = [apsInfo objectForKey:@"alert"];
+    NSString *sound = [apsInfo objectForKey:@"sound"];
+    NSString *title = [notificationInfo objectForKey:@"titulo"];
+    NSString *body = [notificationInfo objectForKey:@"body"];
     
+    NSLog(@"Received Push Badge: %@", badge);
+    NSLog(@"Received Push Alert: %@", alert);
+    NSLog(@"Received Push Sound: %@", sound);
+    
+    NSLog(@"Received Push Title: %@", title);
+    NSLog(@"Received Push Body: %@", body);
+    
+    UIApplicationState state = [[UIApplication sharedApplication] applicationState];
+    if (state == UIApplicationStateBackground || state == UIApplicationStateInactive)
+    {
+        application.applicationIconBadgeNumber = [[apsInfo objectForKey:@"badge"] integerValue];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"pushNotification" object:nil userInfo:userInfo];
+    } else {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle: title
+                                                            message: body  delegate:self
+                                                  cancelButtonTitle:@"Cerrar"
+                                                  otherButtonTitles:nil, nil];
+        alertView.tag = 10 ;
+        [alertView show];
+    }
 }
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
@@ -98,6 +99,10 @@
                      andNotification:notification];
     
     NSLog(@"Received Local Notification");
+    NSLog(@"Local userinfo: %@", notification.userInfo);
+    NSLog(@"Local title: %@", notification.alertTitle);
+    NSLog(@"Local message: %@", notification.alertBody);
+
 
 }
 
